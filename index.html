@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Owl Carousel Demo</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>Food Favorites</h1>
+
+  <div class="owl-carousel">
+    <div class="item"><img src="img/pizza.jpg"></div>
+    <div class="item"><img src="img/soup.jpg"></div>
+    <div class="item"><img src="img/tomato_soup.jpg"></div>
+    <div class="item"><img src="img/apricot_toast.jpg"></div>
+    <div class="item"><img src="img/begal.jpg"></div>
+    <div class="item"><img src="img/fried_chicken.jpg"></div>
+    <div class="item"><img src="img/panini.jpg"></div>
+    <div class="item"><img src="img/hot_dogs.jpg"></div>
+  </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 1000,
+          dots: true,
+          loop: true,
+          items : 1,
+          margain: 10,
+          nav: false
+      })
+     })
+    </script>
+  </body>
+</html>
